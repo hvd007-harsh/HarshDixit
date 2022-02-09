@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding:0;
+}
+a{
+    color: darkorchid;
+    text-decoration: none;
+}
+li:hover{
+    text-decoration: underline;
+}
+img{
+    height: auto;
+    width: 100%;
+    background-color: #cccccc;
+   visibility: 0.6;
+}
+body{
+    background-image: url('./dimitri-iakymuk-cUeHltmejuY-unsplash.jpg');
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montagu Slab', 'serif' !important;
+}
+h4,h1,h2,h3,h5,h6{
+    color: #fff;
+    text-align: center;
+    font-size: bold;
+}
+p{
+    color: white;
+    text-align: center;
+}
+.img-slide{
+    height:50%;
+    width:50%;
+}
+.container{
+    color: #ffff !important;
+    background-color: #D47AE8;
+    font-weight: bold;
+    width: 10px;
+    padding: 7% 15%;
+}
+/* footer is here */
+.travel{
+    position: fixed;
+    width: 100%;
+    padding: 2% 6%;
+    background: #343a40;
+    color: #ffff;
+    text-align: center;
+    bottom: 0;
+}
