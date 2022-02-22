@@ -9,7 +9,7 @@ const user = require('./model/user.js');
 app= express();
 //load config
 dotenv.config({path:'./config/config.env'});
-const PORT = process.env.PORT||500;
+const PORT = process.env.PORT||5000;
 //Connect Db
 connectDb();
 //Body Parser 
@@ -25,6 +25,15 @@ app.get('/',(req,res)=>{
 })
 app.get('/contact',(req,res)=>{
     res.render('contact');
+})
+app.get('/About',(req,res)=>{
+    res.render('about');
+})
+app.get('/Projects',(req,res)=>{
+    res.render('project');
+})
+app.get('/Hire',(req,res)=>{
+    res.render('hire');
 })
 app.post('/contact/form',(req,res)=>{
     const User = new user({

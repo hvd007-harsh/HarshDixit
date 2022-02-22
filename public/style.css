@@ -1,9 +1,6 @@
-*{
-    margin: 0;
-    padding:0;
-}
+
 a{
-    color: darkorchid;
+    color: #fff;
     text-decoration: none;
 }
 li:hover{
@@ -21,22 +18,118 @@ body{
     width: 100vw;
     font-family: 'Montagu Slab', 'serif' !important;
 }
-h4,h1,h2,h3,h5,h6{
-    color: #fff;
-    text-align: center;
-    font-size: bold;
-}
-p{
-    color: white;
-    text-align: center;
-}
+.home{
+    height:100vh;
+    width:100%;
+    background:url("images/portfolio-man.jpg") no-repeat;
+    color: aliceblue;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .home .home-content{
+    width:90%;
+    height:100%;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .text-one{
+    font-size:25px;
+    color:var(--black-color);
+  }
+  .home .text-two{
+    color:var(--black-color);
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .text-three{
+    font-size: 40px;
+    margin:5px 0;
+    color:var(--primary-color);
+  }
+  .home .text-four{
+    font-size: 23px;
+    margin:5px 0;
+    color:var(--black-color);
+  }
+  .home .button{
+    margin:14px 0;
+  }
+  .home .button button{
+    outline:none;
+    padding:8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background:var(--primary-color);
+    color:var(--white-color);
+    cursor:pointer;
+    border:2px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .home .button button:hover{
+    border-color:var(--primary-color);
+    background-color: var(--white-color);
+    color:var(--primary-color);
+  }
+  
+  /* About Section Styling */
+  section{
+    padding-top:40px;
+  }
+  section .content{
+    width:80%;
+    margin:40px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  section .title{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  section .title span{
+    color:var(--black-color);
+    font-size: 30px;
+    font-weight: 600;
+    position:relative;
+    padding-bottom:8px;
+  }
+  section .title span::before,
+  section .title span::after{
+    content:'';
+    position:absolute;
+    height:3px;
+    width:100%;
+    background:var(--primary-color);
+    left:0;
+    bottom:0;
+  }
+  section .title span::after{
+    bottom:-7px;
+    width:70%;
+    left:50%;
+    transform:translateX(-50%);
+  }
 .img-slide{
-    height:50%;
-    width:50%;
+width: 50%;
+display: block;
+height: auto;
+margin: auto;
+justify-self: center;
+}
+
+.form-group{
+    text-align: -webkit-center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 10px;
+    font-size: 1em;
+    color: aqua;
 }
 .container{
-    color: #ffff !important;
-    background-color: #D47AE8;
+    color: aqua !important;
+    background-color: #2c0635a8;
     font-weight: bold;
     width: 10px;
     padding: 7% 15%;
@@ -50,4 +143,21 @@ p{
     color: #ffff;
     text-align: center;
     bottom: 0;
+}
+.width-330px{
+    max-width: 330px;
+}
+/* profile */
+.profile{
+  width: 10em;
+  height: 10em;
+  border-radius: 200px;
+  border: 2px solid blue;
+  position: absolute;
+  right: 0;
+}
+.Center-carousel{
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
